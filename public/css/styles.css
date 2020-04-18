@@ -1,0 +1,31 @@
+body {
+    background-color: #FFF;
+    color: #573015;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+p, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sections */
+
+header, .colored-section {
+    background-color: #FA9917CC;
+}
+
+.white-section {
+    background-color: #FFF;
+    color: #573015;
+}
+
+footer, .dark-section {
+    background-color: #573015;
+    color: #FA9917;
+}
