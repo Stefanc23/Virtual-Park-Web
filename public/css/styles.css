@@ -14,18 +14,54 @@ p, li {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Sections */
+#header {
+    max-height: 15vh;
+}
 
-header, .colored-section {
+#footer {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.light-section {
     background-color: #FA9917CC;
+    color: inherit;
 }
 
-.white-section {
-    background-color: #FFF;
-    color: #573015;
-}
-
-footer, .dark-section {
+.dark-section {
     background-color: #573015;
     color: #FA9917;
+}
+
+.logo {
+    width: 150px;
+    height: 20%;
+}
+
+.carousel-placeholder {
+    margin: auto 0;
+    width: 75vw;
+}
+
+.tour-placeholder {
+    margin: 0;
+    max-width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #FFF;
+}
+
+.must-see {
+    position: relative;
+    padding: 2rem 5rem 0;
+    width: 100%;
+    height: 31.25rem;
+}
+
+.must-see .logo {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
 }

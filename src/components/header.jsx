@@ -33,10 +33,10 @@ function Header(props) {
     }
 
     return (
-        <header className="sticky-top">
+        <header id="header" className="sticky-top light-section">
             <nav className="navbar navbar-expand-lg navbar-light">
-                <div className="container-fluid">
-                    <Link to="/" className="navbar-brand mr-0"><img className="logo w-75" src={logo} alt="jtp icon"></img></Link>
+                <div className="container-fluid d-flex">
+                    <Link to="/" className="navbar-brand mr-0"><img className="logo" src={logo} alt="jtp icon"/></Link>
                     <ul ref={findUsButtonRef} className="navbar-nav mr-auto">
                         <li><i onMouseOver={extend} style={{cursor: "grab"}}><PinDropIcon />Find Us</i></li>
                     </ul>
@@ -69,7 +69,7 @@ function Header(props) {
                 </div>                
             </nav>
             <Collapse in={extended} timeout="auto">
-                <div ref={wrapperRef} className="container find-us" onMouseLeave={retract}>
+                <div ref={wrapperRef} className="container" onMouseLeave={retract}>
                     <div className="row">
                         <iframe title="jtp2-location" className="col-lg-9 map-container" 
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0584174929627!2d112.52742891383767!3d-7.888957494316584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7880d6ffffffff%3A0xf36560f87fd4fd77!2sJawa%20Timur%20Park%202!5e0!3m2!1sen!2sid!4v1585394795182!5m2!1sen!2sid" 

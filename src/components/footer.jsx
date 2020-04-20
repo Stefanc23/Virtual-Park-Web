@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
     return (
-        <footer className="text-center p-7">
-            <p className="text-white">Copyright 2020 || Code Rights Reserved</p>
+        <footer id="footer" className="dark-section">
+            <p className="text-white m-0">Copyright 2020 || Code Rights Reserved</p>
         </footer>
     );
 }   

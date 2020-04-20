@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./components/home";
-import Animals from "./components/animals";
-import Zones from "./components/zones";
-import About from "./components/about";
+import Home from "./components/Home";
+import Animals from "./components/Animals";
+import Zones from "./components/Zones";
+import About from "./components/About";
 
 function App() {
   return (
