@@ -33,7 +33,7 @@ function Header(props) {
     }
 
     return (
-        <header id="header" className="sticky-top light-section">
+        <header id="header" className="sticky-top">
             <nav className="navbar navbar-expand-lg navbar-light">
                 <div className="container-fluid d-flex">
                     <Link to="/" className="navbar-brand mr-0"><img className="logo" src={logo} alt="jtp icon"/></Link>

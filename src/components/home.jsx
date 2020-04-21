@@ -21,8 +21,8 @@ function Home() {
                     <Tour img={MuseumFrontImage} heading="VIRTUAL MUSEUM" btn="Start Virtual Museum Experience " />
                 </div>
             </div>
-            <MustSee class="must-see d-flex align-items-center flex-column" header="Zoo Must See" logo={ZooLogo} />
-            <MustSee class="must-see light-section d-flex align-items-center flex-column" header="Museum Must See" logo={MuseumLogo} />
+            <MustSee class="must-see d-flex align-items-center flex-column" header="Must See" logo={ZooLogo} />
+            <MustSee class="must-see light-section d-flex align-items-center flex-column" header="" logo={MuseumLogo} />
             <Footer />
         </div>
     );

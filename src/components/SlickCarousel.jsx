@@ -39,7 +39,7 @@ function SlickCarousel(props) {
   }
 
   return (
-    <div className="carousel-placeholder">
+    <div className="carousel">
       <div className="slick-carousel">
         <Slider {...settings}>
             <div>

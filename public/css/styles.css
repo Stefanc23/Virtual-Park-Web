@@ -1,3 +1,5 @@
+/* Global */
+
 body {
     background-color: #FFF;
     color: #573015;
@@ -14,35 +16,50 @@ p, li {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Header and Footer */
+
 #header {
-    max-height: 15vh;
+    background-color: #FA9917CC;
 }
 
 #footer {
+    background-color: #573015;
     margin: 0;
     padding: 10px 0;
     text-align: center;
 }
 
+/* Section Themes */
+
 .light-section {
-    background-color: #FA9917CC;
+    background-color: #FBAD45BF;
     color: inherit;
 }
 
 .dark-section {
-    background-color: #573015;
-    color: #FA9917;
+    background-color: #573015BF;
+    color: #FBAD45;
 }
+
+/* Small Components */
 
 .logo {
     width: 150px;
     height: 20%;
 }
 
-.carousel-placeholder {
+.carousel {
     margin: auto 0;
     width: 75vw;
 }
+
+.banner {
+    margin: 0;
+    width: 100%;
+    height: 20vh;
+}
+
+/* Home Page */
 
 .tour-placeholder {
     margin: 0;
@@ -64,4 +81,74 @@ p, li {
     bottom: 0;
     left: auto;
     right: auto;
+}
+
+/* About Page */
+
+.about-zoo {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.about-zoo p {
+    margin: 5%;
+    text-align: justify;
+}
+
+.zoo-vision {
+    margin: 5% 0 5% 7%;
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+.zoo-mission {
+    margin: 5% 7% 5% 0;
+    float: right;
+    width: 250px;
+    height: auto;
+}
+
+.zoo-vision h2, .zoo-mission h2{
+    background-color: #FBAD45;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.zoo-vision ul, .zoo-mission ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 0.7rem;
+}
+
+.zoo-vision li, .zoo-mission li {
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 0.7rem;
+}
+
+.about-museum {
+    background-color: #573015BF;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    color: #FBAD45;
+}
+
+.about-museum h1, .about-museum h3 {
+    margin: 5%;
+}
+
+.about-museum h3 {
+    margin-top: 10%;
+}
+
+.about-museum p {
+    margin: 5%;
+    text-align: justify;
 }
