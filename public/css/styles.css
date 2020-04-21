@@ -69,6 +69,17 @@ p, li {
     color: #FFF;
 }
 
+.start-tour-button {
+    margin-top: 50px;
+    transition: transform .5s;
+    box-shadow: 0 7.5px rgb(192, 144, 0);
+    color: #573015;
+}
+
+.start-tour-button:hover {
+    transform: scale(1.2);
+}
+
 .must-see {
     position: relative;
     padding: 2rem 5rem 0;
