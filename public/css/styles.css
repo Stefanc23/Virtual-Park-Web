@@ -50,13 +50,24 @@ p, li {
 
 .carousel {
     margin: auto 0;
-    width: 75vw;
+    width: 80vw;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: #573015 !important;
+    font-size: 1.7rem !important;
 }
 
 .banner {
     margin: 0;
     width: 100%;
     height: 20vh;
+}
+
+hr.divider {
+    margin: 20% auto;
+    border-top: 2px solid rgb(204, 204, 204);
+    width: 10vw;
 }
 
 /* Home Page */
@@ -82,7 +93,7 @@ p, li {
 
 .must-see {
     position: relative;
-    padding: 2rem 5rem 0;
+    padding: 2% 5% 0;
     width: 100%;
     height: 31.25rem;
 }
@@ -92,6 +103,18 @@ p, li {
     bottom: 0;
     left: auto;
     right: auto;
+}
+
+/* Animals Page  */
+
+.exhibits {
+    margin: 3% 0; 
+    height: 30rem; 
+    text-align: center;
+}
+
+.exhibits h3 {
+    margin: 50px;
 }
 
 /* About Page */
