@@ -26,9 +26,10 @@
     "slick-carousel": "^1.8.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node backend/server.js",
+    "client": "react-scripts start",
     "server": "nodemon backend/server.js",
-    "dev": "concurrently --kill-others \"npm run server\" \"npm start\"",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
