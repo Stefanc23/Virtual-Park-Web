@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const zoneSchema = new Schema({
+const animalSchema = new Schema({
     name: {
         type: String,
         required: true
@@ -14,18 +14,16 @@ const zoneSchema = new Schema({
         type: String,
         required: true
     },
-    animals: [
-        {
-            type: mongoose.Schema.Types.ObjectId, ref: 'Animal'
-        }
-    ],
     clicks: {
         type: Number
+    },
+    zone: {
+        type: mongoose.Schema.Types.ObjectId, ref: 'Zone'
     }
 }, {
     timestamps: true
 });
 
-const zone = mongoose.model('Zone', zoneSchema);
+const animal = mongoose.model('Animal', animalSchema);
 
-module.exports = zone;
+module.exports = animal;
