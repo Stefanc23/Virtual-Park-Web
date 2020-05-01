@@ -9,7 +9,7 @@ import ZooLogo from "./images/zoo logo.png";
 import MuseumLogo from "./images/museum logo.png";
 
 function Home() {
-    
+
     return (
         <div>
             <Header pageName={"home"} />

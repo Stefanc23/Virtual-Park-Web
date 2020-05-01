@@ -1,32 +1,45 @@
 require('dotenv').config();
 const express = require('express');
-require('express-async-errors');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const methodOverride = require('method-override');
+const cookieParser = require('cookie-parser');
 const path = require('path')
 const app = express();
 const mongoose = require('mongoose');
 
 // MongoDB and Mongoose
 
+mongoose.Promise = require('bluebird');
+
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri,  { useNewUrlParser: true, useUnifiedTopology: true });
 
 const connection = mongoose.connection;
-connection.once("open", () => {
-  console.log("Connection to database was opened successfully");  
-})
+connection.on('connected', function () {  
+  console.log(`Database connection open to ${connection.host} ${connection.name}`);
+});
+connection.on('error',function (err) {  
+  console.log('Mongoose default connection error: ' + err);
+});
+connection.on('disconnected', function () {  
+  console.log('Mongoose default connection disconnected'); 
+});
 
 // Express App
 
 app.use(bodyParser.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+app.use(methodOverride());
+app.use(cookieParser());
 
 app.use(express.static(path.join(__dirname, '../build')))
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build'));
 })
+
+require('./routes')(app);
 
 // Listening Port
 
