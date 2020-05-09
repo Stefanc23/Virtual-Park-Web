@@ -15,19 +15,13 @@ const ZonesController = {
     },
 
     async index(req, res) {
-        const zones = await Zone.find().populate('animals');
+        const zones = await Zone.find().populate('animals').sort({clicks: -1});
         res.send(zones);
     },
 
-    async show(req, res) {
-        const zone = await Zone.findById(req.params.id).populate('animals');
+    async updateClicks(req, res) {
+        const zone = await Zone.findByIdAndUpdate(req.params.id, {$inc: {clicks: 1}}).populate('animals');
         res.send(zone);
-    },
-
-    async animalsByZone(req, res) {
-        const zone = await Zone.findById(req.params.id).populate('animals');
-        const animals = zone.animals;
-        res.send(animals);
     }
 }
 

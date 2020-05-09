@@ -1,16 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function SlickCarousel(props) {
   const [items, setItems] = useState([]);
+  const onClick = props.onClick;
+
+  useEffect(() => {
+    setItems(props.items);
+  }, [props.items])
 
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     speed: 500,
     responsive: [
       {
@@ -43,24 +49,12 @@ function SlickCarousel(props) {
     <div className="carousel">
       <div className="slick-carousel">
         <Slider {...settings}>
-            <div>
-                <h3>1</h3>
-            </div>
-            <div>
-                <h3>2</h3>
-            </div>
-            <div>
-                <h3>3</h3>
-            </div>
-            <div>
-                <h3>4</h3>
-            </div>
-            <div>
-                <h3>5</h3>
-            </div>
-            <div>
-                <h3>6</h3>
-            </div>
+            {items.map(item => (
+              <div id={item._id} className="d-flex flex-column justify-content-center align-items-center p-2" onClick={onClick}>
+                <img id={item._id} src={item.image} alt="" className="w-100"/>
+                <h6 id={item._id} className="text-center w-100">{item.name}</h6>
+              </div>
+            ))}
         </Slider>
       </div>
     </div>
