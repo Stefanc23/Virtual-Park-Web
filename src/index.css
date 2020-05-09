@@ -107,6 +107,10 @@ hr.divider {
 
 /* Animals Page  */
 
+.exhibits-container {
+    min-height: 800px;
+}
+
 .exhibits {
     margin: 3% 0; 
     height: 30rem; 
@@ -114,7 +118,7 @@ hr.divider {
 }
 
 .exhibits h3 {
-    margin: 50px;
+    margin-top: 1rem;
 }
 
 /* About Page */

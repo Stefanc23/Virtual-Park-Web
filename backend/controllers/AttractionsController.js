@@ -15,14 +15,14 @@ const AttractionsController = {
     },
 
     async index(req, res) {
-        const attractions = await Attraction.find().exec();
+        const attractions = await Attraction.find().sort({clicks: -1});
         res.send(attractions);
     },
 
-    async show(req, res) {
-        const attraction = await Attraction.findById(req.params.id).exec();
+    async updateClicks(req, res) {
+        const attraction = await Attraction.findByIdAndUpdate(req.params.id, {$inc: {clicks: 1}});
         res.send(attraction);
-    },
+    }
 }
 
 module.exports = AttractionsController;
