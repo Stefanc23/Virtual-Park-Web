@@ -9,6 +9,7 @@ module.exports = function(app) {
 
     router.post('/zones', ZonesController.create);
     router.get('/zones', ZonesController.index);
+    router.get('/zones/:id/animals', ZonesController.getAnimalsFromZone);
     router.get('/zones/:id', ZonesController.updateClicks);
 
     router.post('/attractions', AttractionsController.create);

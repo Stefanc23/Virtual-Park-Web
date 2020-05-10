@@ -1,4 +1,4 @@
-const { Zone } = require('../models');
+const { Zone, Animal } = require('../models');
 
 const ZonesController = {
     async create(req, res) {
@@ -17,6 +17,11 @@ const ZonesController = {
     async index(req, res) {
         const zones = await Zone.find().populate('animals').sort({clicks: -1});
         res.send(zones);
+    },
+
+    async getAnimalsFromZone(req, res) {
+        const animals = await Animal.find({zone: req.params.id}).populate('zone').sort({clicks: -1});
+        res.send(animals);
     },
 
     async updateClicks(req, res) {
