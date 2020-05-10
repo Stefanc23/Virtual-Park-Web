@@ -33,7 +33,7 @@ function Animals() {
             <Header pageName={"animals"} />
             <div className="exhibits-container container">
                 {items.map(item => (
-                    <Exhibits name={item.name} items={item.animals} />
+                    <Exhibits zone={item} />
                 ))}
             </div>
             <Footer />

@@ -4,16 +4,18 @@ import SlickCarousel from "./SlickCarousel";
 
 function Exhibits(props) {
     const [items, setItems] = useState([]);
-    const [zone, setZone] = useState("");
+    const [zone] = useState(props.zone);
     const [loaded, setLoaded] = useState(false);
 
     useEffect(() => {
         if(!loaded) {
-            setZone(props.name);
-            setItems(props.items);
+            axios.get("/api/zones/" + zone._id + "/animals").then(({data}) => {
+                console.log(data);                
+                setItems(data);
+            })
             setLoaded(true);
         }
-    }, [loaded, props.name, props.items])
+    }, [loaded, zone._id]);
 
     function handleOnClick(event) {
         let id = event.target.id;
@@ -22,7 +24,7 @@ function Exhibits(props) {
 
     return (
         <div className="exhibits d-flex justify-content-center align-items-center flex-column">
-            <h3>{zone}</h3>
+            <h3>{zone.name}</h3>
             <SlickCarousel items={items} onClick={handleOnClick}/>
         </div>
     );
