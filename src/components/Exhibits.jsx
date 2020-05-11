@@ -25,7 +25,7 @@ function Exhibits(props) {
     return (
         <div className="exhibits d-flex justify-content-center align-items-center flex-column">
             <h3>{zone.name}</h3>
-            <SlickCarousel items={items} onClick={handleOnClick}/>
+            <SlickCarousel items={items} onClick={handleOnClick} target="animals"/>
         </div>
     );
 }

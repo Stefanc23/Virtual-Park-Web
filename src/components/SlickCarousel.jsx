@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 function SlickCarousel(props) {
   const [items, setItems] = useState([]);
   const onClick = props.onClick;
+  const target = props.target;
 
   useEffect(() => {
     setItems(props.items);
@@ -50,10 +51,12 @@ function SlickCarousel(props) {
       <div className="slick-carousel">
         <Slider {...settings}>
             {items.map(item => (
-              <div id={item._id} className="d-flex flex-column justify-content-center align-items-center p-2" onClick={onClick}>
-                <img id={item._id} src={item.image} alt="" className="w-100"/>
-                <h6 id={item._id} className="text-center w-100">{item.name}</h6>
-              </div>
+              <Link to={{pathname: `/${target}/${item.name}`, state: {item: item, target: target}}} className="btn">
+                <div id={item._id} className="d-flex flex-column justify-content-center align-items-center p-2" onClick={onClick}>
+                  <img id={item._id} src={item.image} alt="" className="w-100"/>
+                  <h6 id={item._id} className="text-center w-100">{item.name}</h6>
+                </div>
+              </Link>
             ))}
         </Slider>
       </div>
