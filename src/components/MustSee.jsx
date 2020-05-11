@@ -28,7 +28,7 @@ function MustSee(props) {
     return (
         <div className={className}>
             <h1>{headerText}</h1>
-            <SlickCarousel items={items} onClick={handleOnClick}/>
+            <SlickCarousel items={items} onClick={handleOnClick} target={target}/>
             <img className="logo" src={logo} alt="" />
         </div>
     );
