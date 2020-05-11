@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import MuseumBanner from "./images/About/museum banner.jpg";
+import MuseumBanner from "./images/museum banner.jpg";
 
 function AboutMuseum() {
 
