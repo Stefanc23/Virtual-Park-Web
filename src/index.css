@@ -149,6 +149,94 @@ hr.divider {
     margin-top: 1rem;
 }
 
+/* Zones Page  */
+
+.zones-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.zone-img-container {
+    position: absolute;
+    width: 125px;
+    height: 100px;
+    transition: transform .5s;
+    z-index: 5;
+}
+
+.zone-img-container:hover {
+    transform: scale(1.5);
+    z-index: 10;
+}
+
+.zone-img-container img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.35rem;
+}
+
+.zone-img-container.entrance {
+    left: 5%;
+    bottom: 17%;
+}
+
+.zone-img-container.aquarium {
+    left: 8%;
+    bottom: 30%;
+}
+
+.zone-img-container.reptile-garden {
+    left: 23%;
+    bottom: 15%;
+}
+
+.zone-img-container.nocturnal {
+    left: 38%;
+    bottom: 15%;
+}
+
+.zone-img-container.lemur-kingdom {
+    left: 25%;
+    bottom: 32%;
+}
+
+.zone-img-container.savannah {
+    top: 32%;
+    left: 32%;
+}
+
+.zone-img-container.tiger-land {
+    top: 20%;
+    left: 15%;
+}
+
+.zone-img-container.monkey-island {
+    top: 20%;
+    left: 47%;
+}
+
+.zone-img-container.sangkar-raksasa {
+    right: 15%;
+    bottom: 25%;
+}
+
+.zone-img-container.insectarium {
+    right: 52%;
+    bottom: 30%;
+}
+
+.zone-img-container.mayapada {
+    top: 30%;
+    right: 45%;
+}
+
+.zone-img-container.polar-bear {
+    top: 15%;
+    right: 50%;
+}
+
 /* About Page */
 
 .about-zoo {

@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import ZooBanner from "./images/About/zoo banner.jpg";
+import ZooBanner from "./images/zoo banner.jpg";
 
 function AboutZoo() {
 
