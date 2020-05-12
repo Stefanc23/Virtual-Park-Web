@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import PinDropIcon from '@material-ui/icons/PinDrop';
 import Collapse from '@material-ui/core/Collapse';
 import JTPLogo from "./images/jtp group.png";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 function Header(props) {
     const [extended, setExtended] = useState(false);
@@ -71,8 +73,8 @@ function Header(props) {
             <Collapse in={extended} timeout="auto">
                 <div ref={wrapperRef} className="container" onMouseLeave={retract}>
                     <div className="row">
-                        <iframe title="jtp2-location" className="col-lg-9 map-container" 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0584174929627!2d112.52742891383767!3d-7.888957494316584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7880d6ffffffff%3A0xf36560f87fd4fd77!2sJawa%20Timur%20Park%202!5e0!3m2!1sen!2sid!4v1585394795182!5m2!1sen!2sid" 
+                        <iframe title="jtp2-location" className="col-lg-9 map-container lazyload" 
+                                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0584174929627!2d112.52742891383767!3d-7.888957494316584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7880d6ffffffff%3A0xf36560f87fd4fd77!2sJawa%20Timur%20Park%202!5e0!3m2!1sen!2sid!4v1585394795182!5m2!1sen!2sid" 
                                 width="600" height="300" 
                                 allowfullscreen="" aria-hidden="false" 
                                 tabindex="0" frameBorder="0" />

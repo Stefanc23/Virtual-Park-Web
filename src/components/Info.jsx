@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 function Info(props) {
     const [item] = useState(props.location.state.item);
@@ -13,7 +15,7 @@ function Info(props) {
             <div className="info-container d-flex justify-content-center align-items-center">
                 <div className="row">
                     <div className="col-lg-6 d-flex justify-content-center align-items-center">
-                        <img src={image} alt={name} className="w-100"/>
+                        <img data-src={image} alt={name} className="w-100 lazyload"/>
                     </div>
                     <div className="col-lg-6 mt-lg-0 mt-3 p-lg-0 p-5">
                         <h3 className="text-lg-left text-center">{name}</h3>

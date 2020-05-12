@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import PlayCircleOutlineRoundedIcon from '@material-ui/icons/PlayCircleOutlineRounded';
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 function Tour(props) {
     const [bgImg] = useState(props.img);
@@ -9,14 +11,8 @@ function Tour(props) {
     const target = props.target;
 
     return (
-        <div className="tour-placeholder container-fluid d-flex flex-column align-items-center justify-content-center" 
-            style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("${bgImg}")`,
-                backgroundSize: 'cover', 
-                backgroundPosition: 'center center',
-                backgroundRepeat: 'no-repeat',
-                opacity: "0.8"
-            }}>
+        <div className="tour-placeholder container-fluid d-flex flex-column align-items-center justify-content-center p-0">
+            <img data-src={bgImg} alt={bgImg} className="lazyload"/>
             <h1>{headingText}</h1>
             <button id={target} type="button" className="btn btn-lg btn-warning start-tour-button" onClick={startTour}>{btnText}<PlayCircleOutlineRoundedIcon fontSize="large" /></button>  
         </div>
