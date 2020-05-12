@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";
 
 function SlickCarousel(props) {
   const [items, setItems] = useState([]);
@@ -16,6 +18,7 @@ function SlickCarousel(props) {
   var settings = {
     dots: true,
     infinite: false,
+    lazyLoad: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     speed: 500,
@@ -53,8 +56,8 @@ function SlickCarousel(props) {
             {items.map(item => (
               <Link to={{pathname: `/${target}/${item.name}`, state: {item: item, target: target}}} className="btn">
                 <div id={item._id} className="d-flex flex-column justify-content-center align-items-center p-2" onClick={onClick}>
-                  <img id={item._id} src={item.image} alt="" className="w-100"/>
-                  <h6 id={item._id} className="text-center w-100">{item.name}</h6>
+                  <img id={item._id} data-src={item.image} alt="" className="w-100 lazyload"/>
+                  <h6 id={item._id} className="text-center w-100 mt-3">{item.name}</h6>
                 </div>
               </Link>
             ))}
