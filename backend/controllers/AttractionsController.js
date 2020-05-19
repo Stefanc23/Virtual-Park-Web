@@ -11,7 +11,7 @@ const AttractionsController = {
             clicks
         });
         let savedAttraction = await attraction.save().then(() => res.json('Attraction added!')).catch(err => res.status(400).json('Error: ' + err));
-        res.json(savedAttraction);
+        res.send(savedAttraction);
     },
 
     async index(req, res) {

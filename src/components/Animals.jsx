@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import Header from "./Header";
-import Footer from "./Footer";
-import Exhibits from "./Exhibits";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import Header from './Header';
+import Footer from './Footer';
+import Exhibits from './Exhibits';
 
 function Animals() {
     const [items, setItems] = useState([]);
@@ -12,7 +12,7 @@ function Animals() {
         if(!loaded) {
             let zones = [];
             let zonesWithAnimals = [];
-            axios.get("/api/zones").then(({data}) => {
+            axios.get('/api/zones').then(({data}) => {
                 console.log(data);                
                 zones = data;
                 zones.forEach(zone => {

@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Tour from "./Tour";
-import VirtualTour from "./VirtualTour";
-import MustSee from "./MustSee";
-import ZooFrontImage from "./images/Batu Secret Zoo Front.jpg";
-import MuseumFrontImage from "./images/Museum Satwa Front.jpg";
-import ZooLogo from "./images/zoo logo.png";
-import MuseumLogo from "./images/museum logo.png";
+import React, { useState } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import Tour from './Tour';
+import VirtualTour from './VirtualTour';
+import MustSee from './MustSee';
+import ZooFrontImage from './images/Batu Secret Zoo Front.jpg';
+import MuseumFrontImage from './images/Museum Satwa Front.jpg';
+import ZooLogo from './images/zoo logo.png';
+import MuseumLogo from './images/museum logo.png';
 
 function Home() {
     const [inTour, setInTour] = useState(false);
-    const [tour, setTour] = useState("");
+    const [tour, setTour] = useState('');
 
     function handleOnClick(event) {
         setInTour(!inTour);

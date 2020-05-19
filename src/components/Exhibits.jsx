@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import SlickCarousel from "./SlickCarousel";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import SlickCarousel from './SlickCarousel';
 
 function Exhibits(props) {
     const [items, setItems] = useState([]);
@@ -9,7 +9,7 @@ function Exhibits(props) {
 
     useEffect(() => {
         if(!loaded) {
-            axios.get("/api/zones/" + zone._id + "/animals").then(({data}) => {
+            axios.get('/api/zones/' + zone._id + '/animals').then(({data}) => {
                 console.log(data);                
                 setItems(data);
             })
@@ -19,7 +19,7 @@ function Exhibits(props) {
 
     function handleOnClick(event) {
         let id = event.target.id;
-        axios.get("/api/animals/" + id).catch(err => console.log(err));
+        axios.get('/api/animals/' + id).catch(err => console.log(err));
     }
 
     return (

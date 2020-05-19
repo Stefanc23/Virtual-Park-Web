@@ -1,6 +1,6 @@
-import React, {useState} from "react";
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import React, {useState} from 'react';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 function Banner(props) {
     const [banner] = useState(props.banner);

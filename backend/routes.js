@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { AnimalsController, ZonesController, AttractionsController } = require('./controllers');
+const { AnimalsController, ZonesController, AttractionsController, QuestionsController } = require('./controllers');
 
 module.exports = function(app) {
     router.post('/animals', AnimalsController.create);
@@ -15,6 +15,10 @@ module.exports = function(app) {
     router.post('/attractions', AttractionsController.create);
     router.get('/attractions', AttractionsController.index);
     router.get('/attractions/:id', AttractionsController.updateClicks);
+
+    router.post('/questions', QuestionsController.create);
+    router.get('/questions', QuestionsController.index);
+    router.get('/questions/:id', QuestionsController.find);
 
     app.use('/api', router);
 };

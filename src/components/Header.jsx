@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import PinDropIcon from '@material-ui/icons/PinDrop';
 import Collapse from '@material-ui/core/Collapse';
-import JTPLogo from "./images/jtp group.png";
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import JTPLogo from './images/jtp group.png';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 function Header(props) {
     const [extended, setExtended] = useState(false);
@@ -20,9 +20,9 @@ function Header(props) {
               setExtended(true);
           }
         }
-        document.addEventListener("mousedown", handleClick);
+        document.addEventListener('mousedown', handleClick);
         return () => {
-          document.removeEventListener("mousedown", handleClick);
+          document.removeEventListener('mousedown', handleClick);
         };
     });
 

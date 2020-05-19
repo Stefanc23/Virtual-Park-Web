@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import React, { useState } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 function Info(props) {
     const [item] = useState(props.location.state.item);
