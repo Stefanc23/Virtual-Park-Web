@@ -10,8 +10,8 @@ const ZonesController = {
             image,
             clicks
         });
-        let savedZone = await zone.save().then(() => res.json('Zone added!')).catch(err => res.status(400).json('Error: ' + err));
-        res.json(savedZone);
+        let savedZone = await zone.save().then(() => res.json('Zone added!')).catch(err => res.status(500).json('Error: ' + err));
+        res.send(savedZone);
     },
 
     async index(req, res) {

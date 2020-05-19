@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import PlayCircleOutlineRoundedIcon from '@material-ui/icons/PlayCircleOutlineRounded';
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 function Tour(props) {
     const [bgImg] = useState(props.img);

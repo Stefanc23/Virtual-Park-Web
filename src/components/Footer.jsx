@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
-import React from "react";
+import React from 'react';
 
 function Footer() {
     return (

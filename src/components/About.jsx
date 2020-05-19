@@ -1,8 +1,8 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import AboutZoo from "./AboutZoo";
-import AboutMuseum from "./AboutMuseum";
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import AboutZoo from './AboutZoo';
+import AboutMuseum from './AboutMuseum';
 
 
 function About() {

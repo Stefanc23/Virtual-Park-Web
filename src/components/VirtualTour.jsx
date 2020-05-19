@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import ReplyIcon from '@material-ui/icons/Reply';
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 function VirtualTour(props) {
     const [tour] = useState(props.tour);

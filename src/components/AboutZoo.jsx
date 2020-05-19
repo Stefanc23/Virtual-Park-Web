@@ -1,6 +1,6 @@
-import React from "react";
-import Banner from "./Banner";
-import ZooBanner from "./images/zoo banner.jpg";
+import React from 'react';
+import Banner from './Banner';
+import ZooBanner from './images/zoo banner.jpg';
 
 function AboutZoo() {
 

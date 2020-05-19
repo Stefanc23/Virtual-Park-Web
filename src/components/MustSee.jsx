@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import SlickCarousel from "./SlickCarousel";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import SlickCarousel from './SlickCarousel';
 
 function MustSee(props) {
     const target = props.target;
@@ -12,7 +12,7 @@ function MustSee(props) {
     
     useEffect(() => {
         if(!loaded) {
-            axios.get("/api/" + target).then(({data}) => {
+            axios.get('/api/' + target).then(({data}) => {
                 console.log(data);                
                 setItems(data);
             });
@@ -22,7 +22,7 @@ function MustSee(props) {
 
     function handleOnClick(event) {
         let id = event.target.id;   
-        axios.get("/api/" + target + "/" + id).then(({data}) => console.log(data)).catch(err => console.log(err));
+        axios.get('/api/' + target + '/' + id).then(({data}) => console.log(data)).catch(err => console.log(err));
     }
 
     return (
