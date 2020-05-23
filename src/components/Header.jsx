@@ -59,7 +59,7 @@ function Header(props) {
                                     Extras
                                 </Link>
                                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <Link to="/extras/photo-booth" className="dropdown-item">Photo Booth</Link>
+                                    <Link to="/extras/photobooth" className="dropdown-item">Photo Booth</Link>
                                     <Link to="/extras/quiz" className="dropdown-item">Quiz</Link>
                                 </div>
                             </li>

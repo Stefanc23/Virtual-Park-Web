@@ -6,6 +6,7 @@ import Zones from './components/Zones';
 import About from './components/About';
 import Info from './components/Info';
 import Quiz from './components/Quiz';
+import Photobooth from './components/Photobooth';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/zones' component={Zones} />      
         <Route path='/about' component={About} />
         <Route path='/extras/quiz' component={Quiz} /> 
+        <Route path='/extras/photobooth' component={Photobooth} />
       </Switch>      
     </Router>
   );
