@@ -3,6 +3,7 @@ import axios from 'axios';
 import Header from './Header';
 import Footer from './Footer';
 import Exhibits from './Exhibits';
+import './styles/animals.css';
 
 function Animals() {
     const [items, setItems] = useState([]);

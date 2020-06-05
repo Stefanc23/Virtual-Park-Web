@@ -54,12 +54,12 @@ function SlickCarousel(props) {
       <div className="slick-carousel">
         <Slider {...settings}>
             {items.map(item => (
-              <Link to={{pathname: `/${target}/${item.name}`, state: {item: item, target: target}}} className="btn">
-                <div id={item._id} className="d-flex flex-column justify-content-center align-items-center p-2" onClick={onClick}>
-                  <img id={item._id} data-src={item.image} alt="" className="w-100 lazyload"/>
-                  <h6 id={item._id} className="text-center w-100 mt-3">{item.name}</h6>
+                <div id={item._id} className="d-flex flex-column justify-content-center align-items-center px-2" onClick={onClick}>
+                  <Link to={{pathname: `/${target}/${item.name}`, state: {item: item, target: target}}} className="btn p-0">
+                    <img id={item._id} data-src={item.image} alt="" className="w-100 lazyload"/>
+                    <h6 className="m-0 mt-3">{item.name}</h6>
+                  </Link>
                 </div>
-              </Link>
             ))}
         </Slider>
       </div>

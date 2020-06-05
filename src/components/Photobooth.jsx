@@ -11,6 +11,7 @@ import antBg from './images/antBg.jpg';
 import museumBg from './images/museumBg.jpg';
 import trexBg from './images/trexBg.jpg';
 import polarbearBg from './images/polarbearBg.jpg';
+import './styles/photobooth.css';
 
 function Photobooth() {
     const [inMenu, setInMenu] = useState(true);
