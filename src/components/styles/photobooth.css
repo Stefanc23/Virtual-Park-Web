@@ -1,0 +1,112 @@
+.photobooth-container {
+    padding: 1rem;
+    min-height: 80vh;
+}
+
+.pick-photo-box-outer-frame {
+    width: 375px;
+    height: 200px;
+    border: 4px dashed #1B1DDC;
+}
+
+.pick-photo-box {
+    width: 100%;
+    height: 100%;
+    background-color: #3399FF;
+    border-radius: 1rem;
+}
+
+.pick-photo-box .btn {
+    width: 200px !important;
+    font-size: 0.75rem !important;
+    border-radius: 0.5rem !important;
+}
+
+.webcam-placeholder {
+    position: relative;
+    margin: auto;
+    width: 450px;
+    height: 300px;
+    background-color: #C8C8C8;
+    border: 4px dashed #1B1DDC;
+}
+
+.webcam-placeholder .capture-button {
+    position: absolute;
+    right: -9%;
+    bottom: -12%;
+    width: 75px;
+    height: 75px;
+}
+
+.photobooth-buttons {
+    width: 125px;
+    height: 36px;
+}
+
+.background-picker-container .bg-picker {
+    width: 300px !important;
+    height: 175px !important;
+}
+
+.background-picker-container img {
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.photobooth-result-container {
+    position: relative;
+    margin: 2rem auto;
+    width: 75%;
+    height: 500px;
+}
+
+.photobooth-result-container .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 10;
+}
+
+.photobooth-result-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.25;
+    z-index: 15;
+}
+
+.photobooth-result-container h3 {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.photobooth-result-container .photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100%;
+    z-index: 20;
+}
+
+.photobooth-result-container button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15%;
+    z-index: 15;    
+}

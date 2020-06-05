@@ -8,6 +8,7 @@ import QuizProgress from './QuizProgress';
 import Question from './Question';
 import Answers from './Answers';
 import QuizFinish from './QuizFinish';
+import './styles/quiz.css';
 
 function Quiz() {
     const [loaded, setLoaded] = useState(false);

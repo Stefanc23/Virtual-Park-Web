@@ -1,0 +1,22 @@
+.info-container {
+    margin: 0;
+    padding: 2rem;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.info-container img {
+    margin-top: 1rem;
+    width: 80% !important;
+    border: 2px solid #573015;
+    border-radius: 1rem;
+}
+
+.info-container h3 {
+    margin: 1rem 0;
+}
+
+.info-container p {
+    margin-top: 3rem;
+    text-align: justify;
+}

@@ -1,0 +1,13 @@
+.exhibits-container {
+    min-height: 90vh;
+}
+
+.exhibits {
+    margin: 3% 0; 
+    height: 30rem; 
+    text-align: center;
+}
+
+.exhibits h3 {
+    margin-top: 1rem;
+}

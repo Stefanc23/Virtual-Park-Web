@@ -2,9 +2,16 @@
 
 This project is a team project for the Human Computer Interactions course final project.
 
-DEMO : http://mysterious-brushlands-74215.herokuapp.com/
+DEMO   : http://mysterious-brushlands-74215.herokuapp.com/
 
-MOCKUP : http://shorturl.at/bfTY7
+MOCKUP : https://tinyurl.com/virtual-park-web-mockup
+
+## Team members [name (github username)]:
+
+1. Stefano Christian W. (Stefanc23)
+2. Christoper Luis A. (Christoper0704)
+3. Christiano Ekasakti S. (ChristianOki01)
+4. Andre William (Andrewill909)
 
 ## How to run the web app locally
 
@@ -16,7 +23,7 @@ MOCKUP : http://shorturl.at/bfTY7
 	to install all required dependencies, then run
     ### `npm run dev` 
     to start the web app in development mode (recommended), or
-    ### `npm build && npm run server` 
+    ### `npm run build && npm run server` 
     to start the web app in production mode
       
 ## Web app features
@@ -31,13 +38,6 @@ MOCKUP : http://shorturl.at/bfTY7
 If the photobooth feature in the demo isn't working properly, make sure to enable unsafely treat insecure origin as secure setting on your browser and add the demo's complete url (including the 'http://').
 
 For any other errors or bugs that you find, please post an issue regarding the matter.
-
-## Team members [name (github username)]:
-
-1. Stefano Christian W. (Stefanc23)
-2. Christoper Luis A. (Christoper0704)
-3. Christiano Ekasakti S. (ChristianOki01)
-4. Andre William (Andrewill909)
 
 ## Disclaimer
 

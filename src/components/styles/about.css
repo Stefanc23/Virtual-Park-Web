@@ -1,0 +1,67 @@
+.about-zoo {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.about-zoo p {
+    margin: 5%;
+    text-align: justify;
+}
+
+.zoo-vision {
+    margin: 5% 0 5% 7%;
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+.zoo-mission {
+    margin: 5% 7% 5% 0;
+    float: right;
+    width: 250px;
+    height: auto;
+}
+
+.zoo-vision h2, .zoo-mission h2{
+    background-color: #FBAD45;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.zoo-vision ul, .zoo-mission ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 0.7rem;
+}
+
+.zoo-vision li, .zoo-mission li {
+    margin-top: 10px;
+    list-style-type: none;
+    text-align: justify;
+    font-size: 0.7rem;
+}
+
+.about-museum {
+    background-color: #573015BF;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    color: #FBAD45;
+}
+
+.about-museum h1, .about-museum h3 {
+    margin: 5%;
+}
+
+.about-museum h3 {
+    margin-top: 10%;
+}
+
+.about-museum p {
+    margin: 5%;
+    text-align: justify;
+}
