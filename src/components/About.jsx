@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import AboutZoo from './AboutZoo';
 import AboutMuseum from './AboutMuseum';
+import './styles/about.css';
 
 
 function About() {

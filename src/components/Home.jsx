@@ -8,6 +8,7 @@ import ZooFrontImage from './images/Batu Secret Zoo Front.jpg';
 import MuseumFrontImage from './images/Museum Satwa Front.jpg';
 import ZooLogo from './images/zoo logo.png';
 import MuseumLogo from './images/museum logo.png';
+import './styles/home.css';
 
 function Home() {
     const [inTour, setInTour] = useState(false);

@@ -18,6 +18,7 @@ import Mayapada from './images/mayapada.png';
 import PolarBear from './images/polar-bear.png';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import './styles/zones.css';
 
 function Zones() {
 

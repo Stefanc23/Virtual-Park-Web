@@ -5,6 +5,7 @@ import Collapse from '@material-ui/core/Collapse';
 import JTPLogo from './images/jtp group.png';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import './styles/header.css';
 
 function Header(props) {
     const [extended, setExtended] = useState(false);
