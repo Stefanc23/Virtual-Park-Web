@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Virtual Park Web**
 
-## Available Scripts
+This project is a team project for the Human Computer Interactions course final project.
 
-In the project directory, you can run:
+DEMO   : http://mysterious-brushlands-74215.herokuapp.com/
 
-### `npm start`
+MOCKUP : https://tinyurl.com/virtual-park-web-mockup
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Team members [name (github username)]:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Stefano Christian W. (Stefanc23)
+2. Christoper Luis A. (Christoper0704)
+3. Christiano Ekasakti S. (ChristianOki01)
+4. Andre William (Andrewill909)
 
-### `npm test`
+## How to run the web app locally
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Make sure to have the latest version of node installed. You can download it from here https://nodejs.org/en/download/
+2. Download and install git if you haven't already. You can download it from here https://git-scm.com/downloads
+3. Clone or download the project.
+4. From the project directory in your local machine, using git bash run:
+	### `npm install`
+	to install all required dependencies, then run
+    ### `npm run dev` 
+    to start the web app in development mode (recommended), or
+    ### `npm run build && npm run server` 
+    to start the web app in production mode
+      
+## Web app features
 
-### `npm run build`
+1. Virtual tours of Batu Secret Zoo and Museum Satwa
+2. Dynamic carousels that shows the most visited page of the web app
+3. Interactive photobooth
+4. Mini quiz
+  
+## Troubleshooting
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If the photobooth feature in the demo isn't working properly, make sure to enable unsafely treat insecure origin as secure setting on your browser and add the demo's complete url (including the 'http://').
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+For any other errors or bugs that you find, please post an issue regarding the matter.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Disclaimer
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is made for educational purpose and any resource materials that are used such as brands, images, texts, informations, and products belong to their rightful owners.

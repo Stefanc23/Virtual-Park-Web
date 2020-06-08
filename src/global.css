@@ -1,0 +1,131 @@
+/* Global */
+
+body {
+    background-color: #FFF;
+    color: #573015;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+p, li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Section Themes  */
+
+.light-section {
+    background-color: #FBAD45BF;
+    color: inherit;
+}
+
+.dark-section {
+    background-color: #573015BF;
+    color: #FBAD45;
+}
+
+/* Small Components */
+
+.logo {
+    width: 150px;
+    height: 20%;
+}
+
+.carousel {
+    margin: auto 0;
+    width: 80vw;
+}
+
+.slick-prev::before, .slick-next::before {
+    color: #573015 !important;
+    font-size: 1.7rem !important;
+}
+
+.banner-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+hr.divider {
+    margin: 20% auto;
+    border-top: 2px solid rgb(204, 204, 204);
+    width: 10vw;
+}
+
+/* Responsiveness  */
+
+@media only screen and (max-width: 600px) {
+    body, p, a, li, .btn {
+        font-size: 0.85rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .zone-img-container {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+
+    .museum-img-container {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+    }
+
+    .zone-img-container.savannah {
+        top: 25%;
+    }
+
+    .question-image {
+        width: 250px;
+        height: 150px;
+    }
+
+    .quiz-timer {
+        width: 50px;
+        border-radius: 100%;
+    }
+
+    .webcam-placeholder {
+        width: 300px;
+        height: 250px;
+    }
+
+    .webcam-placeholder .capture-button {
+        right: -13%;
+        bottom: -15%;
+    }
+
+    .photobooth-result-container {
+        width: 100%;
+        height: 200px;
+    }
+
+    .photobooth-result-container h3 {
+        font-size: 0.9rem;
+    }
+
+    .photobooth-result-container .photo {
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+    }
+}
